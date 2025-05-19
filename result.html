@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <!--
+        Author: Daniel Avalos
+        Date: 05/06/2025
+        File Name: result.html
+    -->
+    <head>
+        <title>D-Nerd Account Created</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <script>
+            window.addEventListener("load", function() {
+                var formData = location.search.slice(1);
+                formData = formData.replace(/\+/g," ");
+                formData = decodeURIComponent(formData);
+                let formFields = formData.split(/[&=]/g);
+
+                document.getElementById("userResult").textContent = formFields[1];
+                document.getElementById("emailResult").textContent = formFields[3];
+                document.getElementById("passResult").textContent = formFields[5];
+            })
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>DAN.AVA.DEV</h1>
+            <nav>
+                <ul>
+                    <li><a href="">DAN.AVA.DEV.Home</a></li>
+                    <li><a href="">Algebra Quiz I</a></li>
+                    <li><a href="">Personality Survey</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Your DAN.AVA.DEV Account has been created!</h1>
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Result</th>
+                </tr>
+                <tr>
+                    <td>Username:</td>
+                    <td id="userResult"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td id="emailResult"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td id="passResult"></td>
+                </tr>
+            </table>
+        </main>
+        <footer>
+            <p>&copy;2025 DAN.AVA.DEV. All rights reserved</p>
+            <p>
+                <a href="www.linkedin.com/in/2trh262561b06sgd78"><img alt="LinkedIn logo" src="images/LinkedIn-logo.png"></a>
+                <a href="https://github.com/DA-Prime"><img alt="GitHub logo" src="images/GitHub-logo.png"></a>
+            </p>
+        </footer>
+    </body>
+</html>

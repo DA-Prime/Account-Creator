@@ -1,0 +1,119 @@
+/*
+    Author: Daniel Avalos
+    Date: 05/06/2025
+    File Name: 
+*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header CSS rules */
+header {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    color: #082ca1;
+    font-size: 3.5em;
+    font-style: italic;
+}
+
+header img {
+    display: block;
+    width: 40%;
+    margin: 2% auto;
+    background-color: white;
+    border: black solid 1px;
+}
+
+/* Nav CSS rules */
+nav {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 auto;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:link {
+    color: black;
+}
+
+nav a:visited {
+    color: #730791;
+}
+
+nav a:hover {
+    text-decoration: underline;
+} 
+
+nav a:active {
+    color: #082ca1;
+}
+
+/* Main CSS Rules */
+main {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2% 0;
+}
+
+/* (index.html) Main CSS rules */
+form {
+    width: 50%;
+    margin: 3% auto;
+}
+
+/* (result.html) CSS rules */
+table {
+    width: 40%;
+    margin: 5% auto;
+    border: 1px black solid;
+    border-collapse: collapse;
+    text-align: justify;
+}
+
+th, td {
+    border: 1px black solid;
+}
+
+th {
+    background-color: #f5e642;
+    color: #000;
+}
+
+td:nth-of-type(1) {
+    background-color: #d4d3cf;
+    color: #000;
+}
+
+td:nth-of-type(2) {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Footer CSS rules */
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    text-align: center;
+}
+
+footer img {
+    display: inline-block;
+    width: 5%;
+    height: 5%;
+}
